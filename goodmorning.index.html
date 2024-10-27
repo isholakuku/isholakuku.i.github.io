@@ -1,0 +1,43 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Script</title>
+  </head>
+  <body>
+    <script>
+      function promptUser(message) {
+        return prompt(message);
+      }
+
+      function printMessage(message) {
+        alert(message);
+      }
+
+      printMessage("Hey beautiful 😍 Good Morning! 🌞");
+      promptUser("How was your night?");
+      promptUser("hope you slept well!");
+      let plan = promptUser("what are your plans for today?");
+      printMessage(`${plan}.... \n uhm okay`);
+      let tint = promptUser("should i tint my hair today?").toLowerCase();
+      if (tint === "yes") {
+        printMessage("thank you 😉 ");
+        printMessage("i just want to carry you along");
+      } else if (tint === "no") {
+        printMessage(" okay boss");
+      }
+      let food = promptUser("what will you have for breakfast?").toLowerCase();
+      if (
+        food === "i dont know" ||
+        food === "i dont know yet" ||
+        food === "nothing " ||
+        food === "idk"
+      ) {
+        printMessage("Try to eat something babe");
+        printMessage("I LOVE YOU ❤️");
+      }
+    </script>
+  </body>
+</html>
